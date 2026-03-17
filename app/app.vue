@@ -3,3 +3,5 @@
       <NuxtPage />
   </NuxtLayout>
 </template>
+
+"justify-center flex-column"
