@@ -5,7 +5,7 @@
         <v-card-text class="py-10">
             <v-text-field 
             variant="outlined"
-            v-model="Username"
+            v-model="username"
             flat
             label="Username" prepend-inner-icon="mdi-account" 
             clearable>
@@ -15,7 +15,7 @@
 
             <v-text-field 
             variant="outlined" 
-            v-model="Password"
+            v-model="password"
             flat
             label="Password" prepend-inner-icon="mdi-lock" 
             type="password"
@@ -36,11 +36,15 @@ definePageMeta({
 });
 const defaultUsername = ref("admin");
 const defaultPassword = ref("admin123");
-const Username = ref("");   
-const Password = ref("");
+const username = ref("");   
+const password = ref("");
 
 function login() {
- alert("Mali ka ng tinama tropa!");
- if (Username.value === defaultUsername)
+ if (username.value === defaultUsername.value && password.value === defaultPassword.value
+ ) {
+    navigateTo("/dashboard")
+ } else {
+    alert("Invalid Username or Password")
+ }
 }   
 </script>
