@@ -17,10 +17,12 @@
         <v-divider></v-divider>
 
         <v-list density="compact" nav>
-          <v-list-item prepend-icon="mdi-bell" title="Dashboard" value="dashboard" to="/dashboard"></v-list-item>
+          <v-list-item prepend-icon="mdi-account-details" title="Dashboard" value="dashboard" to="/dashboard"></v-list-item>
           <v-list-item prepend-icon="mdi-menu" title="Prelim" value="prelim" to="/prelim"></v-list-item>
-          <v-list-item prepend-icon="mdi-ring" title="Calculator Practice" value="calculate" to="/calculate"></v-list-item>
+          <v-list-item prepend-icon="mdi-calculator" title="Calculator Practice" value="calculate" to="/calculate"></v-list-item>
           <v-list-item prepend-icon="mdi-calculator" title="Calculator Midterm" value="midtermexam" to="/midtermexam"></v-list-item>
+          <v-list-item prepend-icon="mdi-list-box" title="Todo List" value="todo" to="/todo"></v-list-item>
+
 
           
         </v-list>

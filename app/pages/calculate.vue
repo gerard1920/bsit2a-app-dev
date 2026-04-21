@@ -2,6 +2,12 @@
     <div>
         <h1> Calculate page</h1>
     </div>
+    <v-radio-group v-model="operator" inline>
+      <v-radio label="Addition" value="+"></v-radio>
+      <v-radio label="Subtraction" value="-"></v-radio>
+      <v-radio label="Multiplication" value="*"></v-radio>
+      <v-radio label="Division" value="/"></v-radio>
+    </v-radio-group>
 
     <v-card width="500">
         <v-card-text>
@@ -21,8 +27,15 @@
 const firstnumber = ref();
 const secondnumber = ref();
 const total = ref(0);
+const operator = ref();
 
 function calculate () {
     total.value = Number(firstnumber.value) + Number(secondnumber.value);
+    total.value = Number(firstnumber.value) - Number(secondnumber.value);
+    total.value = Number(firstnumber.value) * Number(secondnumber.value);
+    total.value = Number(firstnumber.value) / Number(secondnumber.value);
+
+
+
 }
 </script>
